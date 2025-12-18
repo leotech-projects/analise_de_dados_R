@@ -172,3 +172,40 @@ write.xlsx(motos93, file = "motos93.xlsx", rowNames = FALSE)
 * É **reprodutível, organizado e adequado para análise estatística**.
 
 Se desejar, posso explicar **funções estatísticas aplicáveis**, **visualizações** ou **como importar o Excel de volta para o R**.
+
+---
+
+O comando mais **direto e correto em R** para somar (contar) o total de motos de origem **"Brasil"** é:
+
+```r
+sum(motos93$origem == "Brasil")
+```
+
+### Explicação objetiva
+
+* `motos93$origem` → acessa a coluna **origem**.
+* `== "Brasil"` → cria uma condição lógica (TRUE/FALSE).
+* `sum()` → soma os valores TRUE (TRUE = 1, FALSE = 0).
+
+---
+
+### Alternativa equivalente (com `table`)
+
+```r
+table(motos93$origem)["Brasil"]
+```
+
+---
+
+### Alternativa usando `dplyr` (se preferir)
+
+```r
+library(dplyr)
+
+motos93 %>%
+  filter(origem == "Brasil") %>%
+  nrow()
+```
+
+Se quiser, posso mostrar como **gerar esse total em um relatório** ou **exportar o resultado para o Excel**.
+
