@@ -60,6 +60,23 @@ Esta apostila apresenta uma coleção de exercícios práticos para iniciantes n
 22. Geração de um histograma para a coluna `valor`.
 
 ---
+## 4.3. Exercícios sobre Criação de Funções
+
+Crie uma função chamada dobro() que receba um número e retorne o dobro.
+
+Crie uma função media3() que calcule a média de três números.
+
+Crie uma função categorizar_idade() que receba uma idade e retorne:
+
+"jovem" se idade < 30
+
+"adulto" se idade entre 30 e 59
+
+"idoso" se idade >= 60
+
+Crie uma função que receba um vetor numérico e retorne o maior valor.
+
+Crie uma função que receba um data frame e retorne apenas as colunas numéricas.
 
 ## 5. Projeto Final
 
@@ -82,11 +99,5 @@ Esta apostila apresenta uma coleção de exercícios práticos para iniciantes n
 
 ---
 
-## 7. Próximos Passos
 
-Caso deseje, posso complementar esta apostila com:
 
-* gabarito completo dos exercícios,
-* versão em PDF,
-* exemplos comentados linha a linha,
-* exercícios específicos para análise estatística, ciência de dados ou segurança institucional.
